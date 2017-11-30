@@ -1,0 +1,13 @@
+def selection_sort(a):
+	for i in range(len(a)):
+       	t = i
+        j = i
+        while j < len(a):
+            if a[j] < a[t]:
+                t = j
+            j += 1
+        a[t], a[i] = a[i], a[t]
+    return a
+
+a = [5, 4, 3, 2, 1]
+
